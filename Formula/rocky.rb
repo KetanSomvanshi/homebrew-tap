@@ -1,8 +1,8 @@
 class Rocky < Formula
   desc "Floating pixel-cat desktop pet for Claude Code"
   homepage "https://github.com/KetanSomvanshi/rocky"
-  url "https://github.com/KetanSomvanshi/rocky/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "7456d643fd1393e8152f46474c0a9f44fab47222d825fb71d19b087dc0bb0baa"
+  url "https://github.com/KetanSomvanshi/rocky/archive/refs/tags/v1.6.0.tar.gz"
+  sha256 "bff94901069685f5027457a15cc9b9a325963f434639adc6141e6a0b6932fee3"
   license "MIT"
   head "https://github.com/KetanSomvanshi/rocky.git", branch: "main"
 
@@ -10,7 +10,7 @@ class Rocky < Formula
 
   def install
     # Native Swift app; compiled locally, so no Gatekeeper prompt.
-    system "xcrun", "swiftc", "-O", "RockyCore.swift", "main.swift", "-o", "rocky"
+    system "xcrun", "swiftc", "-O", "-parse-as-library", "RockyCore.swift", "main.swift", "-o", "rocky"
     bin.install "rocky"
 
     # Sources kept for the optional screen saver + the hook + wiring scripts.
