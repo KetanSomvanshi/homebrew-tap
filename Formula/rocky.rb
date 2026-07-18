@@ -1,8 +1,8 @@
 class Rocky < Formula
   desc "Floating pixel-cat desktop pet for Claude Code"
   homepage "https://github.com/KetanSomvanshi/rocky"
-  url "https://github.com/KetanSomvanshi/rocky/archive/refs/tags/v1.6.0.tar.gz"
-  sha256 "bff94901069685f5027457a15cc9b9a325963f434639adc6141e6a0b6932fee3"
+  url "https://github.com/KetanSomvanshi/rocky/archive/refs/tags/v1.7.0.tar.gz"
+  sha256 "b6807a244778d26e3f496a7a95e7fb33aa19e5ccc42a3ac6c5c2dc5e12d2cc8e"
   license "MIT"
   head "https://github.com/KetanSomvanshi/rocky.git", branch: "main"
 
